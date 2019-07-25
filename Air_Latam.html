@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b73ed7ab5e82424f81b1a308ea804f33 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b73ed7ab5e82424f81b1a308ea804f33" ></div>
+        
+</body>
+<script>    
+    
+            var map_b73ed7ab5e82424f81b1a308ea804f33 = L.map(
+                "map_b73ed7ab5e82424f81b1a308ea804f33",
+                {
+                    center: [4.3635, -74.0454],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d617ed52df44bf890915a6f63307231 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+            var circle_marker_450fdf172fdc4225aeb8a272931ae7f3 = L.circleMarker(
+                [-23.5506507, -46.6333824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_12dc1f106fe043b4a090e74c5cad571c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7a818a6d78f47f392a02a515f8ceefe = $(`<div id="html_b7a818a6d78f47f392a02a515f8ceefe" style="width: 100.0%; height: 100.0%;">São Paulo, Brazil</div>`)[0];
+            popup_12dc1f106fe043b4a090e74c5cad571c.setContent(html_b7a818a6d78f47f392a02a515f8ceefe);
+        
+
+        circle_marker_450fdf172fdc4225aeb8a272931ae7f3.bindPopup(popup_12dc1f106fe043b4a090e74c5cad571c)
+        ;
+
+        
+    
+    
+            var circle_marker_9301383a7c224624a702a32524fccd73 = L.circleMarker(
+                [19.7212005, -101.1921318],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_b160014dfe8647e78fd64a2be14afc67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d003e9e5b5b549e68ad36689b76f2aee = $(`<div id="html_d003e9e5b5b549e68ad36689b76f2aee" style="width: 100.0%; height: 100.0%;"> Sierra Madre Oriental Mts., Mexico</div>`)[0];
+            popup_b160014dfe8647e78fd64a2be14afc67.setContent(html_d003e9e5b5b549e68ad36689b76f2aee);
+        
+
+        circle_marker_9301383a7c224624a702a32524fccd73.bindPopup(popup_b160014dfe8647e78fd64a2be14afc67)
+        ;
+
+        
+    
+    
+            var circle_marker_2ba843cd2a484ad1a5641872de5d4471 = L.circleMarker(
+                [10.059041, -72.5531811],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_70c954df1551482d8d2f3bff8dbdc8cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_753260de043c4da195bcdb65f687e6e4 = $(`<div id="html_753260de043c4da195bcdb65f687e6e4" style="width: 100.0%; height: 100.0%;">Machiques, Venezuela</div>`)[0];
+            popup_70c954df1551482d8d2f3bff8dbdc8cc.setContent(html_753260de043c4da195bcdb65f687e6e4);
+        
+
+        circle_marker_2ba843cd2a484ad1a5641872de5d4471.bindPopup(popup_70c954df1551482d8d2f3bff8dbdc8cc)
+        ;
+
+        
+    
+    
+            var circle_marker_6d6dfa2c1f764d7694986068f22c3fa6 = L.circleMarker(
+                [3.9000578, -76.302013],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_1568f7611612447fbfb2ab8d5ead8f5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_887566eea01c4b69be3773e76a83a21d = $(`<div id="html_887566eea01c4b69be3773e76a83a21d" style="width: 100.0%; height: 100.0%;"> Buga, Colombia</div>`)[0];
+            popup_1568f7611612447fbfb2ab8d5ead8f5b.setContent(html_887566eea01c4b69be3773e76a83a21d);
+        
+
+        circle_marker_6d6dfa2c1f764d7694986068f22c3fa6.bindPopup(popup_1568f7611612447fbfb2ab8d5ead8f5b)
+        ;
+
+        
+    
+    
+            var circle_marker_0a566459c01c46ae88f566e3987bff6e = L.circleMarker(
+                [10.6499149, -71.6396282],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_85448ad93c7848b5be7a29c407ea309c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f82ebc06ad024690ad4016e774a9079c = $(`<div id="html_f82ebc06ad024690ad4016e774a9079c" style="width: 100.0%; height: 100.0%;">Maracaibo, Venezuela</div>`)[0];
+            popup_85448ad93c7848b5be7a29c407ea309c.setContent(html_f82ebc06ad024690ad4016e774a9079c);
+        
+
+        circle_marker_0a566459c01c46ae88f566e3987bff6e.bindPopup(popup_85448ad93c7848b5be7a29c407ea309c)
+        ;
+
+        
+    
+    
+            var circle_marker_2d31bc1073fe493c94dbbfe8cff0f4b6 = L.circleMarker(
+                [-10.2429203, -54.9919857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_34a035b544444562ae965af7740ed8c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cadb9b26173b40299767e92d53b641b6 = $(`<div id="html_cadb9b26173b40299767e92d53b641b6" style="width: 100.0%; height: 100.0%;"> Peixoto Azevedo, Brazil</div>`)[0];
+            popup_34a035b544444562ae965af7740ed8c7.setContent(html_cadb9b26173b40299767e92d53b641b6);
+        
+
+        circle_marker_2d31bc1073fe493c94dbbfe8cff0f4b6.bindPopup(popup_34a035b544444562ae965af7740ed8c7)
+        ;
+
+        
+    
+    
+            var circle_marker_ea0178bbb99c415ba68297d9a54def76 = L.circleMarker(
+                [23.135305, -82.3589631],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_e8f7af566fbb466aae0154ee7f895e1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5a1160b33444550b41a6345bc5ace1f = $(`<div id="html_f5a1160b33444550b41a6345bc5ace1f" style="width: 100.0%; height: 100.0%;">Havana, Cuba</div>`)[0];
+            popup_e8f7af566fbb466aae0154ee7f895e1c.setContent(html_f5a1160b33444550b41a6345bc5ace1f);
+        
+
+        circle_marker_ea0178bbb99c415ba68297d9a54def76.bindPopup(popup_e8f7af566fbb466aae0154ee7f895e1c)
+        ;
+
+        
+    
+    
+            var circle_marker_50e8fe5e676d49459773c4805213d5c3 = L.circleMarker(
+                [8.1348124, -72.788915],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_f3f872a3d94d4752a381d2d46771ec26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_573428724d98435f823f8ccd9cdce184 = $(`<div id="html_573428724d98435f823f8ccd9cdce184" style="width: 100.0%; height: 100.0%;">Sardinata, Colombia</div>`)[0];
+            popup_f3f872a3d94d4752a381d2d46771ec26.setContent(html_573428724d98435f823f8ccd9cdce184);
+        
+
+        circle_marker_50e8fe5e676d49459773c4805213d5c3.bindPopup(popup_f3f872a3d94d4752a381d2d46771ec26)
+        ;
+
+        
+    
+    
+            var circle_marker_3efae4fb16c540f8a0c6f733ef8a7a88 = L.circleMarker(
+                [-3.9841, -38.6180383],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_04b42edbc582418782b0ddadedef4f7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a03dcedc62514178959695f865da247e = $(`<div id="html_a03dcedc62514178959695f865da247e" style="width: 100.0%; height: 100.0%;">Pacatuba, Brazil</div>`)[0];
+            popup_04b42edbc582418782b0ddadedef4f7f.setContent(html_a03dcedc62514178959695f865da247e);
+        
+
+        circle_marker_3efae4fb16c540f8a0c6f733ef8a7a88.bindPopup(popup_04b42edbc582418782b0ddadedef4f7f)
+        ;
+
+        
+    
+    
+            var circle_marker_48e37f3f58e54199bc5bf7cd6c5e2928 = L.circleMarker(
+                [14.0931919, -87.2012631],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_f6bd0031a9444594a16d077e0f25d4fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d17eca08ae53496d88d223e5eb98d2a2 = $(`<div id="html_d17eca08ae53496d88d223e5eb98d2a2" style="width: 100.0%; height: 100.0%;">Tegucigalpa, Honduras</div>`)[0];
+            popup_f6bd0031a9444594a16d077e0f25d4fa.setContent(html_d17eca08ae53496d88d223e5eb98d2a2);
+        
+
+        circle_marker_48e37f3f58e54199bc5bf7cd6c5e2928.bindPopup(popup_f6bd0031a9444594a16d077e0f25d4fa)
+        ;
+
+        
+    
+    
+            var circle_marker_ea8f67cbf727497ab003cb7b7c68bf41 = L.circleMarker(
+                [-16.3988667, -71.5369607],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_267ead8c05074a0996519f9d19548353 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0fbe6eba2124b8e9db3f90c03bc19f8 = $(`<div id="html_b0fbe6eba2124b8e9db3f90c03bc19f8" style="width: 100.0%; height: 100.0%;">Arequipa, Peru</div>`)[0];
+            popup_267ead8c05074a0996519f9d19548353.setContent(html_b0fbe6eba2124b8e9db3f90c03bc19f8);
+        
+
+        circle_marker_ea8f67cbf727497ab003cb7b7c68bf41.bindPopup(popup_267ead8c05074a0996519f9d19548353)
+        ;
+
+        
+    
+    
+            var circle_marker_4633e9a245794c9b82ac61c28a045cd0 = L.circleMarker(
+                [-2.8669955, -79.1860002030913],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_3e40ab8e59bf484cb6841fe5d82dac73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f8a5f3667954a29a300964be4cbf098 = $(`<div id="html_9f8a5f3667954a29a300964be4cbf098" style="width: 100.0%; height: 100.0%;">Cuenca, Ecuador</div>`)[0];
+            popup_3e40ab8e59bf484cb6841fe5d82dac73.setContent(html_9f8a5f3667954a29a300964be4cbf098);
+        
+
+        circle_marker_4633e9a245794c9b82ac61c28a045cd0.bindPopup(popup_3e40ab8e59bf484cb6841fe5d82dac73)
+        ;
+
+        
+    
+    
+            var circle_marker_fade95f56bb74fecbbf095d85ff7c688 = L.circleMarker(
+                [22.9688161, -82.3875473],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_d44946f6555e4358ab07f28864898716 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b885f5ead23438c925b2dce96f44cf4 = $(`<div id="html_5b885f5ead23438c925b2dce96f44cf4" style="width: 100.0%; height: 100.0%;">Santiago de las Vegas, Cuba</div>`)[0];
+            popup_d44946f6555e4358ab07f28864898716.setContent(html_5b885f5ead23438c925b2dce96f44cf4);
+        
+
+        circle_marker_fade95f56bb74fecbbf095d85ff7c688.bindPopup(popup_d44946f6555e4358ab07f28864898716)
+        ;
+
+        
+    
+    
+            var circle_marker_8fafab469ee54b66bdbe29d75afb9499 = L.circleMarker(
+                [4.59808, -74.0760439],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_f35c6024750f417aa58513d8667ff6a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a13b9911a8a4fee9704388bce43bb9c = $(`<div id="html_4a13b9911a8a4fee9704388bce43bb9c" style="width: 100.0%; height: 100.0%;">Bogotá, Colombia</div>`)[0];
+            popup_f35c6024750f417aa58513d8667ff6a1.setContent(html_4a13b9911a8a4fee9704388bce43bb9c);
+        
+
+        circle_marker_8fafab469ee54b66bdbe29d75afb9499.bindPopup(popup_f35c6024750f417aa58513d8667ff6a1)
+        ;
+
+        
+    
+    
+            var circle_marker_2f8fbc7d9aa946ff88bc76046ba362b8 = L.circleMarker(
+                [-13.5212349, -71.9711244],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_b4823eb7f7a34fa385540684e04baa21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_159c924276c64cf891fc166d69a44955 = $(`<div id="html_159c924276c64cf891fc166d69a44955" style="width: 100.0%; height: 100.0%;">Cusco, Peru</div>`)[0];
+            popup_b4823eb7f7a34fa385540684e04baa21.setContent(html_159c924276c64cf891fc166d69a44955);
+        
+
+        circle_marker_2f8fbc7d9aa946ff88bc76046ba362b8.bindPopup(popup_b4823eb7f7a34fa385540684e04baa21)
+        ;
+
+        
+    
+    
+            var circle_marker_812b788016e94561990b432ffc414aed = L.circleMarker(
+                [-23.5506507, -46.6333824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_84ce0f79d7d6454c91cc79da74d0012e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c65013c114904b1c8a2ad17b951f9196 = $(`<div id="html_c65013c114904b1c8a2ad17b951f9196" style="width: 100.0%; height: 100.0%;">São Paulo, Brazil</div>`)[0];
+            popup_84ce0f79d7d6454c91cc79da74d0012e.setContent(html_c65013c114904b1c8a2ad17b951f9196);
+        
+
+        circle_marker_812b788016e94561990b432ffc414aed.bindPopup(popup_84ce0f79d7d6454c91cc79da74d0012e)
+        ;
+
+        
+    
+    
+            var circle_marker_95c0c5a78a77484cadf4d7c64954f1fe = L.circleMarker(
+                [0.9556759, -77.8867296],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_da4468b49084426989ebf2c6153b993a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa9498d0bbe344628189ca9886bc9a8b = $(`<div id="html_fa9498d0bbe344628189ca9886bc9a8b" style="width: 100.0%; height: 100.0%;">Cumbal Volcano, Colombia</div>`)[0];
+            popup_da4468b49084426989ebf2c6153b993a.setContent(html_fa9498d0bbe344628189ca9886bc9a8b);
+        
+
+        circle_marker_95c0c5a78a77484cadf4d7c64954f1fe.bindPopup(popup_da4468b49084426989ebf2c6153b993a)
+        ;
+
+        
+    
+    
+            var circle_marker_097c031b4da24cb4be68b3c948cd657a = L.circleMarker(
+                [17.3329722, -89.5185908424722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_8266d3c2255c4cb18d6d1232d2c4e706 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_321c451ab5bb486a8d82a1b0a400aea2 = $(`<div id="html_321c451ab5bb486a8d82a1b0a400aea2" style="width: 100.0%; height: 100.0%;">Flores, Guatemala</div>`)[0];
+            popup_8266d3c2255c4cb18d6d1232d2c4e706.setContent(html_321c451ab5bb486a8d82a1b0a400aea2);
+        
+
+        circle_marker_097c031b4da24cb4be68b3c948cd657a.bindPopup(popup_8266d3c2255c4cb18d6d1232d2c4e706)
+        ;
+
+        
+    
+    
+            var circle_marker_f009eb9829a54128abbfee0e170578d2 = L.circleMarker(
+                [-17.333333, -61.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_9ec60e45248946bcbbdfb742afb1b3b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af8f124bfa7948ada0500e34d8713d32 = $(`<div id="html_af8f124bfa7948ada0500e34d8713d32" style="width: 100.0%; height: 100.0%;">Santa Cruz, Bolivia</div>`)[0];
+            popup_9ec60e45248946bcbbdfb742afb1b3b8.setContent(html_af8f124bfa7948ada0500e34d8713d32);
+        
+
+        circle_marker_f009eb9829a54128abbfee0e170578d2.bindPopup(popup_9ec60e45248946bcbbdfb742afb1b3b8)
+        ;
+
+        
+    
+    
+            var circle_marker_25bf05984d8f4fe79a7587602a7f7dc9 = L.circleMarker(
+                [-9.3965671, -75.143911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_8f7a6628fa7d4c959a3bfa035e57a483 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_390c9511560a42739265f44cdf63c579 = $(`<div id="html_390c9511560a42739265f44cdf63c579" style="width: 100.0%; height: 100.0%;">Puerto Inca, Peru</div>`)[0];
+            popup_8f7a6628fa7d4c959a3bfa035e57a483.setContent(html_390c9511560a42739265f44cdf63c579);
+        
+
+        circle_marker_25bf05984d8f4fe79a7587602a7f7dc9.bindPopup(popup_8f7a6628fa7d4c959a3bfa035e57a483)
+        ;
+
+        
+    
+    
+            var circle_marker_5b445ec79c504e77821f8071d97affed = L.circleMarker(
+                [-0.2201641, -78.5123274],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_a39e479d61174336b255b2240b54fd2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2db6b2ca50184213bc9f5583856d7973 = $(`<div id="html_2db6b2ca50184213bc9f5583856d7973" style="width: 100.0%; height: 100.0%;">Quito, Ecuador</div>`)[0];
+            popup_a39e479d61174336b255b2240b54fd2d.setContent(html_2db6b2ca50184213bc9f5583856d7973);
+        
+
+        circle_marker_5b445ec79c504e77821f8071d97affed.bindPopup(popup_a39e479d61174336b255b2240b54fd2d)
+        ;
+
+        
+    
+    
+            var circle_marker_dbcef398365d4e8bbdc669cd63ae9bb6 = L.circleMarker(
+                [-3.58082345, -70.0885162871149],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_eb1e61360e6a451fbe4a8d7019ef6b3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27dc16a8049e4db480c4b2b98a479550 = $(`<div id="html_27dc16a8049e4db480c4b2b98a479550" style="width: 100.0%; height: 100.0%;"> Leticia, Colombia</div>`)[0];
+            popup_eb1e61360e6a451fbe4a8d7019ef6b3d.setContent(html_27dc16a8049e4db480c4b2b98a479550);
+        
+
+        circle_marker_dbcef398365d4e8bbdc669cd63ae9bb6.bindPopup(popup_eb1e61360e6a451fbe4a8d7019ef6b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_d893c8878ef3448881e2354a1c299c00 = L.circleMarker(
+                [25.91611485, -100.358423089626],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_81fb505be8964765a2d15a08a40f9b3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3b8edea02bd4a86a16d2bb52a89cb02 = $(`<div id="html_d3b8edea02bd4a86a16d2bb52a89cb02" style="width: 100.0%; height: 100.0%;">El Carmen, Mexico</div>`)[0];
+            popup_81fb505be8964765a2d15a08a40f9b3e.setContent(html_d3b8edea02bd4a86a16d2bb52a89cb02);
+        
+
+        circle_marker_d893c8878ef3448881e2354a1c299c00.bindPopup(popup_81fb505be8964765a2d15a08a40f9b3e)
+        ;
+
+        
+    
+    
+            var circle_marker_646114f16ea44f98b7040a67d55a0700 = L.circleMarker(
+                [9.7452286, -63.1799873],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_4d7bc3116b4943e1816c514cdf7a76f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a22240970c1f44bc92caefc3a93ddab9 = $(`<div id="html_a22240970c1f44bc92caefc3a93ddab9" style="width: 100.0%; height: 100.0%;"> Maturín, Venezuela</div>`)[0];
+            popup_4d7bc3116b4943e1816c514cdf7a76f4.setContent(html_a22240970c1f44bc92caefc3a93ddab9);
+        
+
+        circle_marker_646114f16ea44f98b7040a67d55a0700.bindPopup(popup_4d7bc3116b4943e1816c514cdf7a76f4)
+        ;
+
+        
+    
+    
+            var circle_marker_a8747da630fe4823bf7e349c1935cfbd = L.circleMarker(
+                [19.4326009, -99.1333416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_302b996156f6446f80211e18c3bb63ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ab432007e914c56a2a6cff75fb49f43 = $(`<div id="html_0ab432007e914c56a2a6cff75fb49f43" style="width: 100.0%; height: 100.0%;">Mexico City, Mexico</div>`)[0];
+            popup_302b996156f6446f80211e18c3bb63ec.setContent(html_0ab432007e914c56a2a6cff75fb49f43);
+        
+
+        circle_marker_a8747da630fe4823bf7e349c1935cfbd.bindPopup(popup_302b996156f6446f80211e18c3bb63ec)
+        ;
+
+        
+    
+    
+            var circle_marker_bfa988e6c18c41a5b23688b49156a686 = L.circleMarker(
+                [-9.0470958, -77.808857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_91368f5984234e38918e92482fd5f777 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cffb101777154323a3beba96657fe8e6 = $(`<div id="html_cffb101777154323a3beba96657fe8e6" style="width: 100.0%; height: 100.0%;">Cordillera Blanca, Peru</div>`)[0];
+            popup_91368f5984234e38918e92482fd5f777.setContent(html_cffb101777154323a3beba96657fe8e6);
+        
+
+        circle_marker_bfa988e6c18c41a5b23688b49156a686.bindPopup(popup_91368f5984234e38918e92482fd5f777)
+        ;
+
+        
+    
+    
+            var circle_marker_1d75de7ff95d450881c9a610523a8b74 = L.circleMarker(
+                [11.544634, -72.9069784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_aea47656ef4b4137bf2dab8f7ad455c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f978270aed4408b8179269c0a09678c = $(`<div id="html_9f978270aed4408b8179269c0a09678c" style="width: 100.0%; height: 100.0%;">Riohacha, Colombia</div>`)[0];
+            popup_aea47656ef4b4137bf2dab8f7ad455c0.setContent(html_9f978270aed4408b8179269c0a09678c);
+        
+
+        circle_marker_1d75de7ff95d450881c9a610523a8b74.bindPopup(popup_aea47656ef4b4137bf2dab8f7ad455c0)
+        ;
+
+        
+    
+    
+            var circle_marker_65cfd92a28d04cc9bfbd5e6996334b45 = L.circleMarker(
+                [23.0002058, -82.3881198],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_e316c7f5c0264ea9bf43e5bb1a523f49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e090cf971ae84e559c80e6b8283c78f7 = $(`<div id="html_e090cf971ae84e559c80e6b8283c78f7" style="width: 100.0%; height: 100.0%;">Boyeros, Cuba</div>`)[0];
+            popup_e316c7f5c0264ea9bf43e5bb1a523f49.setContent(html_e090cf971ae84e559c80e6b8283c78f7);
+        
+
+        circle_marker_65cfd92a28d04cc9bfbd5e6996334b45.bindPopup(popup_e316c7f5c0264ea9bf43e5bb1a523f49)
+        ;
+
+        
+    
+    
+            var circle_marker_47adddd8ed6a470bb5d7609a7f736618 = L.circleMarker(
+                [20.3039309, -77.1558146],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_06a9245168e24608868ea5e7bb7fd1ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa42619b92434dd58b9781c43f061148 = $(`<div id="html_aa42619b92434dd58b9781c43f061148" style="width: 100.0%; height: 100.0%;">Guasimal, Cuba</div>`)[0];
+            popup_06a9245168e24608868ea5e7bb7fd1ef.setContent(html_aa42619b92434dd58b9781c43f061148);
+        
+
+        circle_marker_47adddd8ed6a470bb5d7609a7f736618.bindPopup(popup_06a9245168e24608868ea5e7bb7fd1ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f013793250d6406cb3c4e80ecdf6e3f8 = L.circleMarker(
+                [-33.6132332, -70.5838338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_e6fb064f11fe415e8a4b2e1263b28d7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2c0aaad3bf8466ba95f8897de7efe9d = $(`<div id="html_b2c0aaad3bf8466ba95f8897de7efe9d" style="width: 100.0%; height: 100.0%;">Cordillera Mts., La Paz Region, Bolivia</div>`)[0];
+            popup_e6fb064f11fe415e8a4b2e1263b28d7c.setContent(html_b2c0aaad3bf8466ba95f8897de7efe9d);
+        
+
+        circle_marker_f013793250d6406cb3c4e80ecdf6e3f8.bindPopup(popup_e6fb064f11fe415e8a4b2e1263b28d7c)
+        ;
+
+        
+    
+    
+            var circle_marker_ca61a7530d924d71812aa05cb72d3aee = L.circleMarker(
+                [-36.3791286, -59.5056179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_4da00b7035804b1dbebaaebc8e3c751b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0811c931b5640bcb03e03dc4fe42bfb = $(`<div id="html_a0811c931b5640bcb03e03dc4fe42bfb" style="width: 100.0%; height: 100.0%;">Cachari, Buenos Aires, Argentina</div>`)[0];
+            popup_4da00b7035804b1dbebaaebc8e3c751b.setContent(html_a0811c931b5640bcb03e03dc4fe42bfb);
+        
+
+        circle_marker_ca61a7530d924d71812aa05cb72d3aee.bindPopup(popup_4da00b7035804b1dbebaaebc8e3c751b)
+        ;
+
+        
+    
+    
+            var circle_marker_8a2b9d3018ea429fa771db990854d884 = L.circleMarker(
+                [-34.5803362, -58.4245236],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_266eddba9c2e4f46aa260b19265bfe72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa7b81f87c584d9a89973247ee92031f = $(`<div id="html_aa7b81f87c584d9a89973247ee92031f" style="width: 100.0%; height: 100.0%;">Palermo, Argentina</div>`)[0];
+            popup_266eddba9c2e4f46aa260b19265bfe72.setContent(html_aa7b81f87c584d9a89973247ee92031f);
+        
+
+        circle_marker_8a2b9d3018ea429fa771db990854d884.bindPopup(popup_266eddba9c2e4f46aa260b19265bfe72)
+        ;
+
+        
+    
+    
+            var circle_marker_0647a646a8a94433bb2d89fdb6e64d38 = L.circleMarker(
+                [-22.8169235, -43.127247673172],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_c870ce159011498b929c5a712d2a855e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85d635b0575246c88b053f5fdc9f4f33 = $(`<div id="html_85d635b0575246c88b053f5fdc9f4f33" style="width: 100.0%; height: 100.0%;">Guanabara Bay, Brazil</div>`)[0];
+            popup_c870ce159011498b929c5a712d2a855e.setContent(html_85d635b0575246c88b053f5fdc9f4f33);
+        
+
+        circle_marker_0647a646a8a94433bb2d89fdb6e64d38.bindPopup(popup_c870ce159011498b929c5a712d2a855e)
+        ;
+
+        
+    
+    
+            var circle_marker_a2cb361a57164bad8d786837ddb0eda0 = L.circleMarker(
+                [-36.2302232, -61.114254],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_92a71e9450024f20a960abc4683b97f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d630fd88460b4655a474fa08e111d7d3 = $(`<div id="html_d630fd88460b4655a474fa08e111d7d3" style="width: 100.0%; height: 100.0%;"> Bolívar, Argentina</div>`)[0];
+            popup_92a71e9450024f20a960abc4683b97f2.setContent(html_d630fd88460b4655a474fa08e111d7d3);
+        
+
+        circle_marker_a2cb361a57164bad8d786837ddb0eda0.bindPopup(popup_92a71e9450024f20a960abc4683b97f2)
+        ;
+
+        
+    
+    
+            var circle_marker_7b92cc69624d4627b0d0c86494d76c82 = L.circleMarker(
+                [-11.3299052, -75.5549204],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_70c9884e68dd443eaa38679e64be5584 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ff4ef5cbe694af189fd3c227518f120 = $(`<div id="html_8ff4ef5cbe694af189fd3c227518f120" style="width: 100.0%; height: 100.0%;">Tarma, Peru</div>`)[0];
+            popup_70c9884e68dd443eaa38679e64be5584.setContent(html_8ff4ef5cbe694af189fd3c227518f120);
+        
+
+        circle_marker_7b92cc69624d4627b0d0c86494d76c82.bindPopup(popup_70c9884e68dd443eaa38679e64be5584)
+        ;
+
+        
+    
+    
+            var circle_marker_d3ac201b65b949faa912874fbc49fab2 = L.circleMarker(
+                [-17.5834672, -66.0148054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_4795141f86094973933cbcf31410b1a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_790792c326294eef9bf69a2dffc5156f = $(`<div id="html_790792c326294eef9bf69a2dffc5156f" style="width: 100.0%; height: 100.0%;">Arbieto, Bolivia</div>`)[0];
+            popup_4795141f86094973933cbcf31410b1a3.setContent(html_790792c326294eef9bf69a2dffc5156f);
+        
+
+        circle_marker_d3ac201b65b949faa912874fbc49fab2.bindPopup(popup_4795141f86094973933cbcf31410b1a3)
+        ;
+
+        
+    
+    
+            var circle_marker_3ee3d50a979f4366885703d45d3d114f = L.circleMarker(
+                [-6.7993953, -79.4943176],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_59a0f230cd374c07bd0aaa4e2c2eb932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecf3434208ef49ff94584d7ccc71f969 = $(`<div id="html_ecf3434208ef49ff94584d7ccc71f969" style="width: 100.0%; height: 100.0%;">Pastaza Province, Ecuador</div>`)[0];
+            popup_59a0f230cd374c07bd0aaa4e2c2eb932.setContent(html_ecf3434208ef49ff94584d7ccc71f969);
+        
+
+        circle_marker_3ee3d50a979f4366885703d45d3d114f.bindPopup(popup_59a0f230cd374c07bd0aaa4e2c2eb932)
+        ;
+
+        
+    
+    
+            var circle_marker_24279634d6cd4e6ab89cc366a154693c = L.circleMarker(
+                [-34.4132869, -70.8524073],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_f964dd7784bc4061bb3301216e5c2ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28cd943f36d94861a11144fe25093387 = $(`<div id="html_28cd943f36d94861a11144fe25093387" style="width: 100.0%; height: 100.0%;">Cartagena Bay, off Cartagena, Colombia</div>`)[0];
+            popup_f964dd7784bc4061bb3301216e5c2ac4.setContent(html_28cd943f36d94861a11144fe25093387);
+        
+
+        circle_marker_24279634d6cd4e6ab89cc366a154693c.bindPopup(popup_f964dd7784bc4061bb3301216e5c2ac4)
+        ;
+
+        
+    
+    
+            var circle_marker_d1b223bc9bf048e787d593dcf20eaad7 = L.circleMarker(
+                [-22.8169235, -43.127247673172],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_51a86cb032d8456caab3b1afd58558fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38310e7bcb1c4fc0b859b665a29c67b2 = $(`<div id="html_38310e7bcb1c4fc0b859b665a29c67b2" style="width: 100.0%; height: 100.0%;">Guanabara Bay, Brazil</div>`)[0];
+            popup_51a86cb032d8456caab3b1afd58558fe.setContent(html_38310e7bcb1c4fc0b859b665a29c67b2);
+        
+
+        circle_marker_d1b223bc9bf048e787d593dcf20eaad7.bindPopup(popup_51a86cb032d8456caab3b1afd58558fe)
+        ;
+
+        
+    
+    
+            var circle_marker_295ece79d5204e02a4c3011d107ae6c5 = L.circleMarker(
+                [4.7109718, -74.140064],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_346a93c85d3941d6a9a15e562fecc132 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_063af26e7fd84584b674205614214910 = $(`<div id="html_063af26e7fd84584b674205614214910" style="width: 100.0%; height: 100.0%;">Monserrate Mtn., Bogotá, Colombia</div>`)[0];
+            popup_346a93c85d3941d6a9a15e562fecc132.setContent(html_063af26e7fd84584b674205614214910);
+        
+
+        circle_marker_295ece79d5204e02a4c3011d107ae6c5.bindPopup(popup_346a93c85d3941d6a9a15e562fecc132)
+        ;
+
+        
+    
+    
+            var circle_marker_03146f64268e45ff8ad28daec7c91449 = L.circleMarker(
+                [-0.1399817, -78.4969508689329],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_3d8d6bba050e4295bf96ae4514eed4a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84bc32bbe8be477b8746eb8fe709a534 = $(`<div id="html_84bc32bbe8be477b8746eb8fe709a534" style="width: 100.0%; height: 100.0%;">Concepción, Quito Canton, Ecuador</div>`)[0];
+            popup_3d8d6bba050e4295bf96ae4514eed4a3.setContent(html_84bc32bbe8be477b8746eb8fe709a534);
+        
+
+        circle_marker_03146f64268e45ff8ad28daec7c91449.bindPopup(popup_3d8d6bba050e4295bf96ae4514eed4a3)
+        ;
+
+        
+    
+    
+            var circle_marker_fee24eff32a64852a1e6e84efd35b0c5 = L.circleMarker(
+                [5.0140677, -74.1961879],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_e9f637dca11845399eb0f399ad973fda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_908016eefdc14156bb5b5d96198f6f14 = $(`<div id="html_908016eefdc14156bb5b5d96198f6f14" style="width: 100.0%; height: 100.0%;">Mt. El Tablazo, Subachoque, Colombia</div>`)[0];
+            popup_e9f637dca11845399eb0f399ad973fda.setContent(html_908016eefdc14156bb5b5d96198f6f14);
+        
+
+        circle_marker_fee24eff32a64852a1e6e84efd35b0c5.bindPopup(popup_e9f637dca11845399eb0f399ad973fda)
+        ;
+
+        
+    
+    
+            var circle_marker_572a537fdb284b73a4a5b1b569ace5c9 = L.circleMarker(
+                [-41.1221077, -70.7191539],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_bcd0298399a249438090e8185a4762cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7caa30db13148458916d6bd429adb7c = $(`<div id="html_c7caa30db13148458916d6bd429adb7c" style="width: 100.0%; height: 100.0%;">Pilcaniyeu, Argentina</div>`)[0];
+            popup_bcd0298399a249438090e8185a4762cd.setContent(html_c7caa30db13148458916d6bd429adb7c);
+        
+
+        circle_marker_572a537fdb284b73a4a5b1b569ace5c9.bindPopup(popup_bcd0298399a249438090e8185a4762cd)
+        ;
+
+        
+    
+    
+            var circle_marker_dd107b7c79e3412b90b8556654316980 = L.circleMarker(
+                [9.9840479, -75.3019515],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_9417a3f8bfae4be1838ed8ab04d5f013 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d88fc9981784d269a68c7913504421c = $(`<div id="html_3d88fc9981784d269a68c7913504421c" style="width: 100.0%; height: 100.0%;"> María La Baja, Colombia</div>`)[0];
+            popup_9417a3f8bfae4be1838ed8ab04d5f013.setContent(html_3d88fc9981784d269a68c7913504421c);
+        
+
+        circle_marker_dd107b7c79e3412b90b8556654316980.bindPopup(popup_9417a3f8bfae4be1838ed8ab04d5f013)
+        ;
+
+        
+    
+    
+            var circle_marker_8bb720879a1f4f4f8a50e2d508d3a0ce = L.circleMarker(
+                [-29.7544405, -51.1516497],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_e775bdeeb6174623916fd13ec4d4c519 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4995d0b225845c29561b5d9c8b31c11 = $(`<div id="html_a4995d0b225845c29561b5d9c8b31c11" style="width: 100.0%; height: 100.0%;">São Leopoldo, Brazil</div>`)[0];
+            popup_e775bdeeb6174623916fd13ec4d4c519.setContent(html_a4995d0b225845c29561b5d9c8b31c11);
+        
+
+        circle_marker_8bb720879a1f4f4f8a50e2d508d3a0ce.bindPopup(popup_e775bdeeb6174623916fd13ec4d4c519)
+        ;
+
+        
+    
+    
+            var circle_marker_1a3a08f987034e309418b7a02fb804ba = L.circleMarker(
+                [-3.1316333, -59.9825041],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_a8aa0eaec82040b5a51829c3fbe4021c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff730929cc1446c3abacbf3459e6de0b = $(`<div id="html_ff730929cc1446c3abacbf3459e6de0b" style="width: 100.0%; height: 100.0%;"> of Manaus, Brazil</div>`)[0];
+            popup_a8aa0eaec82040b5a51829c3fbe4021c.setContent(html_ff730929cc1446c3abacbf3459e6de0b);
+        
+
+        circle_marker_1a3a08f987034e309418b7a02fb804ba.bindPopup(popup_a8aa0eaec82040b5a51829c3fbe4021c)
+        ;
+
+        
+    
+    
+            var circle_marker_6e8e06b780414ca5b1f030c0a230ca8c = L.circleMarker(
+                [-9.2769714, -50.5450409683524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_b73ed7ab5e82424f81b1a308ea804f33);
+        
+    
+        var popup_6df72ca5d7584d2b872f49d69be1eb6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_251994543a73427a9e731c5202b707a0 = $(`<div id="html_251994543a73427a9e731c5202b707a0" style="width: 100.0%; height: 100.0%;"> Santana do Araguaia, Brazil</div>`)[0];
+            popup_6df72ca5d7584d2b872f49d69be1eb6e.setContent(html_251994543a73427a9e731c5202b707a0);
+        
+
+        circle_marker_6e8e06b780414ca5b1f030c0a230ca8c.bindPopup(popup_6df72ca5d7584d2b872f49d69be1eb6e)
+        ;
+
+        
+    
+</script>
